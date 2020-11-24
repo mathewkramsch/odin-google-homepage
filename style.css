@@ -1,35 +1,51 @@
-:root {
-	--color-white: #fff;
-	--color-gray1: #d0d0d0;
-	--color-gray2: #c0c0c0;
-	--color-gray3: #b8b8b8;
-	--color-gray4: #a9a9a9;
-	--color-gray5: #707070;
-}
-
 html {
 	box-sizing: border-box;
+	font-family: arial, sans-serif;
 } body, body:after {
 	margin: 0;
 	padding: 0;
 } a {
 	text-decoration: none;
-}
+} a:hover { text-decoration: underline; }
 
 nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 10px;
 } nav > ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 0;
+	padding: 0 15px;
 	margin: 0;
 } nav > ul > li {
+	padding: 0 15px 0 0;
+} nav > ul > li > a {
+	color: rgba(0,0,0,.87);
+	font-size: 13px;
+	line-height; 24px;
+} nav > ul > li > a:hover { 
+	opacity: .85
 } nav > ul > li > img {
-}
+	border-radius: 50%;
+} #right-nav {
+	padding: 2px 5px 0 15px;
+} #boxes-icon {
+	background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+	background-size: 528px 68px;
+	background-position: -132px -38px;
+	opacity: 0.55;
+	height: 30px;
+	width: 30px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;	
+} #boxes-icon:hover { opacity: .85; }
 
 main {
 	display: flex;
@@ -37,8 +53,15 @@ main {
 	align-items: center;
 	margin-top: 150px;
 } main > img {
+
 } main > input {
-	border-radius: 15px;
+    margin: 30px;
+    height: 40px;
+    width: 480px;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 24px;
+	border-color: rgb(223,225,229);
 } main > div {
 } main > a {
 }
@@ -52,8 +75,8 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px 5px 15px 5px;
-	background-color: #eee;
+	padding: 12px 15px 13px 15px;
+	background-color: #f2f2f2;
 	border-top-style: solid;
 	border-color: #ddd;
 	border-width: 1px;
@@ -66,6 +89,19 @@ footer {
 	margin: 0;
 } footer > ul > li {
 	padding: 0 15px 0 15px;
-} footer > a, footer > ul > li > a {
-	color: var(--color-gray5);
+} footer > span {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: -100px;
+} footer > span > a, footer > ul > li > a {
+	color: #70757a;
+	font-size: 14px;
+	cursor: pointer;
+} footer > span > img {
+	margin-right: -4px;
+	padding-left: 10px;
+	height: 14px;
+} footer > span > a {
+	margin: 2px 10px 0px 10px;
 }

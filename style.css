@@ -57,7 +57,7 @@ main {
 	flex-direction: row;
 	position: absolute;
 	margin-top: 133px;
-    width: 43%;
+    width: 553px;
     justify-content: space-between;
     align-items: center;
 } main > div > svg {
@@ -73,7 +73,7 @@ main {
 } main > input {
     margin: 30px;
     height: 40px;
-    width: 480px;
+    width: 570px;
     border-style: solid;
     border-width: 1px;
 	border-radius: 24px;
@@ -83,7 +83,7 @@ main {
 	z-index: 2;
 	font-size: 16px;
 	background-color: transparent;
-} main > input:hover {
+} main > input:hover, main > input:focus {
 	box-shadow: 0 1px 6px rgba(32,33,36,.28);
 	border-color: rgba(223,225,229,0);
 } #search-buttons {
